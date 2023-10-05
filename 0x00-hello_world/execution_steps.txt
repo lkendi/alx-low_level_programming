@@ -1,0 +1,12 @@
+Steps: 
+	*Preprocessor - to expanded source code
+	*Compiler - to assembly code
+	*Assembler - to object code
+	*Linker - links obj code to libs e.g header files
+
+=========GCC OPTIONS FOR EACH OF THE STEPS==========
+gcc -E file.c -> Preprocessor
+gcc -c file.c -> Compiler
+gcc -S file.c -> Assembler
+gcc file1 file2 -o program -> Linker
+**-o options refers to the output (can be used for all the options above). Can specify name or leave it blank.
