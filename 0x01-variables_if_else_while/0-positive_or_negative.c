@@ -1,10 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
-/* 
- *  main function- entry point
- *  return: Alwyas 0 (Success)
+/**
+ * main - Entry point
+ *
+ * Return: Alwyas 0 (Success)
  */
 int main(void)
 {
