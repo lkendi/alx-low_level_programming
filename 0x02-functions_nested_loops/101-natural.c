@@ -1,7 +1,6 @@
 #include <stdio.h>
 /**
- * main - print sum of all natural numbers div by 3 or 5 
- * and less than 1024
+ * main - print sum of all natural numbers div by 3 or 5 and less than 1024
  *
  * Return: Always 0
  */
