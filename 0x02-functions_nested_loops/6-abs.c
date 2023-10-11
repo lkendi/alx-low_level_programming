@@ -7,13 +7,19 @@
  */
 int _abs(int i)
 {
+	char val;
+
 	if (i < 0)
 	{
-		write(1, &(-i), sizeof(i));	
+		i = -i;
+		val = '0' + i;
+		_putchar(i);
+			
 	}
 	else
 	{
-		write(1, &i, sizeof(i));
+		val = '0' + i;
+		_putchar(i);
 	}
 
 	return (0);
