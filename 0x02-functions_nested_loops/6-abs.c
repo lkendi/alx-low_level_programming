@@ -11,11 +11,11 @@ int _abs(int i)
 
 	if (i < 0)
 	{
-		i = -i;.
+		i = -i;
 	}
 	 val = '0' + i;
 	 _putchar(val);
 
-	 return;
+	 return (0);
 }
 
