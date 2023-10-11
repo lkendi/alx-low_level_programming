@@ -17,8 +17,12 @@ void times_table(void)
 
 				_putchar((val / 10) + '0');
 				_putchar((val % 10) + '0');
-				_putchar(',');
-				_putchar(' ');
+				
+				if (val != 81)
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
 			}
 			else
 			{
@@ -29,4 +33,6 @@ void times_table(void)
 			}
 		}
 	}
+
+	_putchar('\n');
 }
