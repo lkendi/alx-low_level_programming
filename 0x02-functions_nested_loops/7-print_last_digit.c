@@ -8,7 +8,7 @@
 int print_last_digit(int n)
 {
 	int last_digit = n % 10;
-	
+	char last;
 
 	if (last_digit < 0)
 	{
@@ -17,7 +17,7 @@ int print_last_digit(int n)
 
 	/*convert digit to ascii value to print using _putchar*/
 
-	char last = '0' + last_digit;
+	last = '0' + last_digit;
 
 	_putchar(last);
 	return (last_digit);
