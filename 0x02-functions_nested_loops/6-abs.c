@@ -9,11 +9,11 @@ int _abs(int i)
 {
 	if (i < 0)
 	{
-		write(1, &(-i), 1);	
+		write(1, &(-i), sizeof(i));	
 	}
 	else
 	{
-		write(1, &i, 1);
+		write(1, &i, sizeof(i));
 	}
 
 	return (0);
