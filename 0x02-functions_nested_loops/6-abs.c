@@ -3,22 +3,18 @@
  * _abs - print the absolute value of an integer (without any sign)
  * @i: integer value passed to the function
  *
- * Return: Always 0;
+ * Return: absolute value of the integer;
  */
 int _abs(int i)
 {
-	char val;
-
 	if (i < 0)
 	{
-		i = -i;
+		return (-1 * i);
+	}
+	else if (i >= 0)
+	{
+		return i;
 	}
 
-	if (i != 0)
-	{
-	 	val = '0' + i;
-	 	_putchar(val);
-	}
-	 return (0);
 }
 
