@@ -15,18 +15,24 @@ void times_table(void)
 			{
 				_putchar((val / 10) + '0');
 				_putchar((val % 10) + '0');
-				if (val != 81)
+			
+				if (j < 9)
 				{
-					_putchar(',');
-					_putchar(' ');
+					{
+                                	        _putchar(',');
+                                        	_putchar(' ');
+                                	}
 				}
 			}
 			else
 			{
 				_putchar(val + '0');
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
+				if (j < 9)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+				}
 			}
 		}
 		_putchar('\n');
