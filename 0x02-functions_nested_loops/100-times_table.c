@@ -13,27 +13,37 @@ void print_times_table(int n)
 		{
 			for (j = 0; j <= n; j++)
 			{
-				if (j > 0)
+				val = i * j;
+				if (j == 0)
+				{
+					_putchar('0' + val);
+				}
+				else
 				{
 					_putchar(',');
 					_putchar(' ');
-					_putchar(' ');
+					if (val < 10)
+					{
+						_putchar(' ');
+						_putchar(' ');
+						_putchar('0' + val);
+					}
+					else if ((val >= 10) && (val < 100))
+					{
+						_putchar(' ');
+						_putchar((val / 10) + '0');
+						_putchar((val % 10) + '0');
+					}
+					else if (val > 100)
+					{
+						_putchar((val / 100) + '0');
+						_putchar(((val / 10) % 10) + '0');
+						_putchar((val % 10) + '0');
+					}
 				}
-				val = i * j;
-				if (val >= 100)
-				{
-					_putchar((val / 100) + '0');
-					val %= 100;
-				}
-				if (val >= 10)
-				{
-					_putchar((val / 10) + '0');
-					val %= 10;
-				}
-					_putchar(val + '0');
-				}
-			 _putchar('\n');
 			}
+			_putchar('\n');
+		}
 	}
 }
 
