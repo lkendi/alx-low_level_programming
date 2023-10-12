@@ -13,7 +13,7 @@ int main(void)
 
 	for (i = 1; i <= 50; i++)
 	{
-		printf("%d", n1);
+		printf("%lld", n1);
 		n3 = n1 + n2;
 		n1 = n2;
 		n2 = n3;
