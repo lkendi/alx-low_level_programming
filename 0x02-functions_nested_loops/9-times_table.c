@@ -5,6 +5,7 @@
 void times_table(void)
 {
 	int i, j, val;
+
 	for (i = 0; i <= 9; i++)
 	{
 		for (j = 0; j <= 9; j++)
@@ -23,10 +24,10 @@ void times_table(void)
 			}
 			else if (val >= 10)
 			{
-					_putchar(',');
-					_putchar(' ');
-					_putchar((val / 10) + '0');
-					_putchar((val % 10) + '0');
+				_putchar(',');
+				_putchar(' ');
+				_putchar((val / 10) + '0');
+				_putchar((val % 10) + '0');
 			}
 		}
 		_putchar('\n');
