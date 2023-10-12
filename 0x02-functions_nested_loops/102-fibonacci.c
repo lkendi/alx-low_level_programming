@@ -6,14 +6,14 @@
  */
 int main(void)
 {
-	long long n1 = 1;
-	long long n2 = 2;
-	long long n3;
+	long n1 = 1;
+	long n2 = 2;
+	long n3;
 	int i;
 
 	for (i = 1; i <= 50; i++)
 	{
-		printf("%lld", n1);
+		printf("%ld", n1);
 		n3 = n1 + n2;
 		n1 = n2;
 		n2 = n3;
