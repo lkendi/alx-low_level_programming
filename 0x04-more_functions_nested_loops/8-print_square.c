@@ -20,6 +20,9 @@ int print_square(int size)
 			_putchar('\n');
 		}
 	}
-	_putchar('\n');
-	return (0);
+	else
+	{
+		_putchar('\n');
+	}
+		return (0);
 }
