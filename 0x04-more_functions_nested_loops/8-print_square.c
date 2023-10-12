@@ -5,7 +5,7 @@
  *
  * Return: Always 0
  */
-int print_square(int size)
+void print_square(int size)
 {
 	int i, j;
 
@@ -24,5 +24,5 @@ int print_square(int size)
 	{
 		_putchar('\n');
 	}
-		return (0);
+	
 }
