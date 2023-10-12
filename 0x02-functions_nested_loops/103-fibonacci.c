@@ -10,7 +10,7 @@ int main(void)
 	long n2 = 2;
 	long n3;
 	long sum = 0;
-	int i;
+	int i = 0;
 
 	while (i < 4000000)
 	{
