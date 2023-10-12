@@ -11,7 +11,7 @@ int main(void)
 	long n3;
 	long sum = 0;
 
-	while (i <= 4000000)
+	while (n1 <= 4000000)
 	{
 		if (n1 % 2 == 0)
 		{
