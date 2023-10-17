@@ -5,7 +5,7 @@
  * @a: array
  * @n: number of integers in the array to print
  */
-void print_array(iny *a, int n)
+void print_array(int *a, int n)
 {
 	int i;
 
