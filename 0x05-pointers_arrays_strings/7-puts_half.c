@@ -6,28 +6,25 @@
 
 void puts_half(char *str)
 {
-	int len, half;
-	char * start = str;
+	int len = 0;
+	int i, a;
 
-	while (*str != '\0')
+	while (str[len] != '\0')
 	{
 		len++;
-		str++;
 	}
-
-	str -= len; /*reset pointer to the beginning*/
 
 	if (len % 2 == 0)
 	{
-		half = len / 2;
+		a = len / 2;
 	}
 	else
 	{
-		half = (len - 1) / 2;
+		a = (len - 1) / 2;
 	}
-	while (str[half] != '0')
+	for (i = a; i < len; i++)
 	{
-		_putchar(str);
-		half++;
+		_putchar(str[i]);
 	}
+	_putchar('\n');
 }
