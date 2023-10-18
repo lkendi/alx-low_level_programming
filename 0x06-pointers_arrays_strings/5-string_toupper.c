@@ -8,7 +8,7 @@
 char *string_toupper(char *s)
 {
 	while (*s != '\0')
-i	{
+	{
 		if (*s >= 'a' && *s < 'z')
 		{
 			*s -= 32;
