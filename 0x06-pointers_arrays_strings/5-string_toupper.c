@@ -1,18 +1,19 @@
 #include "main.h"
 /**
  * *string_toupper - change all lowercase letters to uppercase
- * @c: lowercase charcater to change to uppercase
+ * @s: lowercase charcater to change to uppercase
+ * Return: uppercase characters
  */
 
-char *string_toupper(char *c)
+char *string_toupper(char *s)
 {
-	while (*c != '\0')
+	while (*s != '\0')
 	{
-		if (*c > 96 && *c < 123)
+		if (*s > 96 && *s < 123)
 		{
-			*c -= 32;
+			*s -= 32;
 		}
 
 	}
-	return (c);
+	return (s);
 }
