@@ -7,37 +7,28 @@
 
 char *leet(char *s)
 {
-	if (*s != '\0')
+	char *myString = s;
+	char *letters = "aAeEoOtTlL";
+	char *leets = "4433007711";
+	char *p, *q;
+
+	while (*s)
 	{
-		while (*s == 'a' || *s ==  'A')
+		p = letters;
+		q = leets;
+
+		while (*p)
 		{
-			*s = '4';
-		}
-		while (*s == 'e' || *s == 'E')
-		{
-			*s = '3';
-		}
-		while (*s == 'o' || *s == 'O')
-		{
-			*s = '0';
-		}
-		while (*s == 't' || *s == 'T')
-		{
-			*s = '7';
-		}
-		while (*s == 'l' || *s == 'L')
-		{
-			*s = '1';
+			if (*s == *p)
+			{
+				*s = *q;
+				break;
+			}
+			p++;
+			q++;
 		}
 		s++;
 	}
-	return (s);
-}
 
-
-
-
-
-		s++;
-	}
+	return (myString);
 }
