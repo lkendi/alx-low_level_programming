@@ -27,7 +27,7 @@ char *leet(char *s)
 		}
 		while (*s == 'l' || *s == 'L')
 		{
-			*s == '1';
+			*s = '1';
 		}
 		s++;
 	}
