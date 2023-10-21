@@ -8,7 +8,7 @@
 int main(void)
 {
 	int random, i;
-	int total = 3002;
+	int total = 3102;
 
 	srand(time(NULL));
 	for (i = 0; total > 102; i++)
