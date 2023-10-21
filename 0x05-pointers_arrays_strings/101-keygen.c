@@ -13,7 +13,8 @@ int main(void)
 	srand(time(NULL));
 	for (i = 0; total > 102; i++)
 	{
-		random = (rand() % 120) + 1;
+		random = (rand() % 125) + 1;
+		/*printable ASCII values - 1 to 125*/ 
 		printf("%c", random);
 		total -= random;
 	}
