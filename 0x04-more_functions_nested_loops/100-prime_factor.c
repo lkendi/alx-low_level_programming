@@ -6,8 +6,8 @@
 
 int main(void)
 {
-	long long n = 612852475143;
-	long long i;
+	long n = 612852475143;
+	long i;
 
 	for (i = 2; n > 1; i++)
 	{
@@ -16,6 +16,7 @@ int main(void)
 			n /= i;
 		}
 	}
-	printf("%lld\n", i - 1);
+	printf("%ld\n", i - 1);
+	return (0);
 }
 
