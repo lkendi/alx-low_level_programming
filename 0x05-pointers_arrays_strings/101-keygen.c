@@ -7,10 +7,16 @@
  */
 int main(void)
 {
-	int random;
+	int random, i;
+	int total = 3002;
 
 	srand(time(NULL));
-	random = rand();
-
-	return (random);
+	for (i = 0; total > 102; i++)
+	{
+		random = (rand() % 120) + 1;
+		printf("%c", random);
+		total -= random;
+	}
+	printf("%c", total);
+	return (0);
 }
