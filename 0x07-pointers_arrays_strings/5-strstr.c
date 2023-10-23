@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * *_strstr - locates the first occurence of a substring
  * @haystack: string
@@ -29,7 +30,6 @@ char *_strstr(char *haystack, char *needle)
 		haystack++;
 
 	}
-
 	return (NULL);
 
 }
