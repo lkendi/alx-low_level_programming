@@ -10,23 +10,21 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	char *str, *set;
+	char *set;
 
 	while (*s != '\0')
 	{
-		str = s;
 		set = accept;
 
-		while (*set != '\0' && *str == *set)
+		while (*set != '\0')
 		{
-			str++;
+			if (*s == *set)
+			{
+				return (s);
+			}
 			set++;
 		}
-		if (*set == '\0')
-		{
-			return (str);
-		}
-		str++;
+		s++;
 	}
 	return (NULL);
 }
