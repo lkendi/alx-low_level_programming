@@ -30,7 +30,7 @@ int palindrome_recursive(char *s, int start, int end)
 
 int is_palindrome(char *s)
 {
-	int len = _strlen_recursive(s);
+	int len = _strlen_recursion(s);
 
 	return (palindrome_recursive(s, 0, len - 1));
 
