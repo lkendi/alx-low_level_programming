@@ -14,6 +14,15 @@ char *str_concat(char *s1, char *s2)
 	unsigned int i, j, len = 0;
 	char *final_string;
 
+	if (s1 == NULL)
+	{
+		s1 = "";
+	}
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
+
 	final_string = malloc(sizeof(s1) + sizeof(s2) + 1);
 	if (final_string == NULL)
 	{
