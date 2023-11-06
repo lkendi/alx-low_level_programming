@@ -1,5 +1,6 @@
 #include "dog.h"
 #include <stdio.h>
+#include <stddef.h>
 /**
  * print_dog - prints a struct dog
  * @d: struct dog pointer
@@ -38,7 +39,7 @@ void print_dog(struct dog *d)
 	}
 	else
 	{
-		printf("(nil)");
+		printf("(nil)\n");
 	}
 
 }
