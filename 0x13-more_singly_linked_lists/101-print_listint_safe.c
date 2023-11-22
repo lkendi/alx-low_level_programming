@@ -12,10 +12,6 @@ size_t print_listint_safe(const listint_t *head)
 	size_t num = 0;
 	const listint_t *temp;
 
-	if (head == NULL)
-	{
-		return (0);
-	}
 	temp = head;
 	while (temp != NULL)
 	{
@@ -25,14 +21,9 @@ size_t print_listint_safe(const listint_t *head)
 		if (temp <= temp->next)
 		{
 			printf("->[%p] %d\n", (void *)temp->next, temp->next->n);
-			break;
+			exit(98);
 		}
 		temp = temp->next;
-	}
-	if (temp != NULL && temp->next != NULL)
-	{
-		printf("[%p] %d\n", (void *)temp->next, temp->next->n);
-		exit(98);
 	}
 	return (num);
 }
