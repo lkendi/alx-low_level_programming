@@ -10,7 +10,7 @@ unsigned int _pow(int n, int e)
 {
 	int power = 1;
 	int i;
-	
+
 	for (i = 1; i <= e; ++i)
 	{
 		power *= n;
