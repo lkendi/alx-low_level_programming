@@ -20,6 +20,12 @@ typedef struct list_s
 	struct list_s *next;
 } list_t;
 
+typedef struct func_node
+{
+	void(*func)(void);
+	struct func_node *next;
+} func_t;
+
 /*Function prototypes*/
 size_t print_list(const list_t *h);
 size_t list_len(const list_t *h);
