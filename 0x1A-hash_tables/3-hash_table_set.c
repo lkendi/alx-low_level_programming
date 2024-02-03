@@ -36,6 +36,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 				return (0);
 			return (1);
 		}
+		current = current->next;
 	}
 	/*Key not found, create ad new node*/
 	new_node = malloc(sizeof(hash_node_t));
