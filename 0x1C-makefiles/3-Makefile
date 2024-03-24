@@ -15,4 +15,5 @@ oclean:
 
 fclean: oclean clean
 
-re: clean all
+re:
+	$(MAKE) -f 3-Makefile
