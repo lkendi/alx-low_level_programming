@@ -7,6 +7,9 @@ RM = rm -f
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
+$(OBJ): %.o: %.c
+	$(CC) -c $< -o $@
+
 clean:
 	$(RM) *~ *.swp $(NAME)
 
@@ -14,6 +17,9 @@ oclean:
 	$(RM) $(OBJ)
 
 fclean: oclean clean
+	@true
 
-re:
-	$(MAKE) -f 3-Makefile
+re:oclean all
+	@true
+
+.PHONY: all clean oclean fclean re
