@@ -29,7 +29,7 @@ int binary_search(int *array, size_t size, int value)
 			else
 				printf("%d\n", array[i]);
 		}
-		
+
 		mid = (start + end) / 2;
 		if (value == array[mid])
 			return (mid);
