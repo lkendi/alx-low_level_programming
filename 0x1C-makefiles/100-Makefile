@@ -10,8 +10,11 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-$(OBJ):
-	$(CC) $(CFLAGS) -c $(SRC)
+main.o: main.c m.h
+	$(CC) $(CFLAGS) -c main.c -o main.o
+
+school.o: school.c m.h
+	$(CC) $(CFLAGS) -c school.c -o school.o
 
 clean:
 	$(RM) *~ *.swp $(NAME)
@@ -26,6 +29,3 @@ re:fclean all
 	@true
 
 .PHONY: all clean oclean fclean re
-
-main.o: main.c m.h
-school.o: school.c m.h
